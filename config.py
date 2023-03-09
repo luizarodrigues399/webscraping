@@ -1,6 +1,6 @@
 PAYLOAD = {
-	'username': 'SEU_EMAIL',
-	'password': 'SUA_SENHA'
+	'username': 'SEU_EMAIL_DE_LOGIN_DO_ADOTE',
+	'password': 'SUA_SENHA_DO_ADOTE'
 	}
 
 
@@ -19,3 +19,8 @@ PRODUCTS_API = "https://api.adoteumcara.com.br/api/v4/products?fields[user]=basi
 
 AUTHORIZATION_API = 'SUA_BASIC_AUTHORIZATION'
 
+ARQUIVO_API = "dados/adoteUmCara-API.json"
+
+ARQUIVO_IDS = "dados/IDsFinais.txt"
+
+ARQUIVO_FINAL = "dados/adoteUmCara-"

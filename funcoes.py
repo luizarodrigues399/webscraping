@@ -3,17 +3,35 @@ import config
 import json
 
 
-def gerarHTML(resultado, inicio, fim):
-
-	nomeArquivo = "adoteUmCara-" + str(inicio) + '-' + str(fim) +'.html'
+def gerarHTMLDateTime(resultado):
 	
-	# para caso queira imprimir os arquivos sem preocupar com indices de inicio e fim e sem que haja conflito de arquivos
-	#tempoCorrente = datetime.datetime.utcnow().timestamp()
-	#nomeArquivo = "adoteUmCara-" + str(tempoCorrente)
+	tempoCorrente = datetime.datetime.utcnow().timestamp()
+
+	nomeArquivo = config.ARQUIVO_FINAL + str(tempoCorrente) + '.json'
 
 	with open(nomeArquivo, "a") as arquivo:  
 
 		arquivo.write(json.dumps(resultado)) 
+
+
+def gerarHTML(resultado, inicio, fim):
+
+	nomeArquivo = config.ARQUIVO_FINAL + str(inicio) + '-' + str(fim) +'.json'
+	
+	with open(nomeArquivo, "a") as arquivo:  
+
+		arquivo.write(json.dumps(resultado)) 
+
+
+
+def gerarLinks(arquivo, inicio, fim):
+
+	with open(arquivo, "r") as arquivo:  
+		resultado = arquivo.read()
+
+		resultado = resultado.split(',')
+
+		return resultado[inicio:fim]
 
 
 
@@ -46,36 +64,26 @@ def printJson(conteudo):
 
 def extrairFeaturesUsuario(conteudo):
 
-	pessoa = conteudo['member']
+	membro = conteudo['member']
+	headingBlock = conteudo['headingBlock']
+	mapa = conteudo['sideColumn']['map'] 
 
-	# extrai mais dados que o ID para debug/verificação se é mesmo um usuário válido
 	dicionario = {
-		'id': pessoa['id'],
-		'nome': pessoa['pseudo'],
-		'titulo': pessoa['title'],
-		'idade': pessoa['age'],		
-		'cidade': pessoa['city']
+		'id': membro['id'],
+		'nome': membro['pseudo'],
+		'titulo': membro['title'],
+		'idade': membro['age'],		
+		'cidade': membro['city'],
+		'fotoPerfil': membro['covers'][0],
+		'fotos': membro['pictures'],
+		'ultimaConexao': headingBlock['lastConnection'],
+		'hashtags': headingBlock['hashtags'],
+		'popularidade': headingBlock['popularity']['popu'],
+		'detalhamentoPerfil': conteudo['mainColumn'],
+		'latitude': mapa['coords']['memberLat'],
+		'longitude': mapa['coords']['memberLng']
 	}
 
 	return dicionario
 
 	
-def gerarLinks(inicio, fim):
-
-	complemento = []
-
-	print(inicio, ' a ', fim)
-
-	for indice in range(inicio, fim): 
-
-		complemento.append(config.PROFILE_URL + str(indice))
-
-	return complemento
-
-
-	# return de teste com IDS válidos do site
-	#return [
-	#	config.PROFILE_URL + '2484532',
-	#	config.PROFILE_URL + '2243708',
-	#	config.PROFILE_URL + '1'
-	#]

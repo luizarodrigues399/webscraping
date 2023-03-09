@@ -16,19 +16,18 @@ indiceFim = int(sys.argv[2])
 
 
 def consultaURLExtrairDado(link):
-		conteudoPagina = sessao.get(link, headers=config.HEADERS)
+		conteudoPagina = sessao.get(config.PROFILE_URL + link, headers = config.HEADERS)
 
 		# para debug, se processo congelou ou não.
 		print(conteudoPagina, datetime.datetime.now())
 
 		try:
-			json = funcao.limparDadosUsuario(conteudoPagina)
+			jsonResultado = funcao.limparDadosUsuario(conteudoPagina)
 
-			return funcao.extrairFeaturesUsuario(json)
+			return funcao.extrairFeaturesUsuario(jsonResultado)
 
-		except:
-			pass
-
+		except Exception as e:
+			print(e)
 
 
 
@@ -36,23 +35,21 @@ def consultaURLExtrairDado(link):
 close ou try catch. Independente se der ou não erro, ele fecha"""
 with requests.Session() as sessao:
 
-	resposta = sessao.post(config.LOGIN_URL, data = config.PAYLOAD, headers = config.HEADERS)
+	sessao.post(config.LOGIN_URL, data = config.PAYLOAD, headers = config.HEADERS)
 
-	urls = funcao.gerarLinks(indiceInicio, indiceFim)
+	urls = funcao.gerarLinks(config.ARQUIVO_IDS, indiceInicio, indiceFim)
 
-
-	# verificando quanto tempo demorou a geração de links
-	print('GERACAO LINKS:', time.time() - start)
+	print(str(indiceInicio) + ' a ' + str(indiceFim))
 
 	try:
 		resultadoFinal = Parallel(n_jobs = -1, verbose=11) \
 			(delayed(consultaURLExtrairDado)(link) for link in urls)
 
-	except:
-		pass
+	except Exception as e:
+			print(e)
 
 	finally:	
 		funcao.gerarHTML(resultadoFinal, indiceInicio, indiceFim)
 
 
-print('TEMPO FINAL:', time.time() - start)
+print('TEMPO:', time.time() - start)

@@ -1,0 +1,317 @@
+{
+   "id":"2564442",
+   "nome":"Lucas",
+   "titulo":"",
+   "idade":31,
+   "cidade":"Belo Horizonte (Minas Gerais)",
+   "fotoPerfil":"https://aka-images.adoteumcara.com.br/br/0027215a021c80f7561.jpg",
+   "fotos":[
+      {
+         "file":"33",
+         "id":"8812130",
+         "urlFullsize":"https://aka-images.adoteumcara.com.br/br/0027215a321bf91a791.jpg",
+         "urlMiddleSize":"https://aka-images.adoteumcara.com.br/br/0027215a2212434ebfe.jpg",
+         "urlThumbnail":"https://aka-images.adoteumcara.com.br/br/0027215a12153aa390e.jpg",
+         "reported":false
+      }
+   ],
+   "ultimaConexao":null,
+   "hashtags":[
+      {
+         "id":2,
+         "hashtag":"fortinho",
+         "url":"https://www.adoteumcara.com.br/gogole?q=%23fortinho"
+      },
+      {
+         "id":552,
+         "hashtag":"bike",
+         "url":"https://www.adoteumcara.com.br/gogole?q=%23bike"
+      },
+      {
+         "id":437,
+         "hashtag":"nirvana",
+         "url":"https://www.adoteumcara.com.br/gogole?q=%23nirvana"
+      },
+      {
+         "id":587,
+         "hashtag":"fortalezadigital",
+         "url":"https://www.adoteumcara.com.br/gogole?q=%23fortalezadigital"
+      },
+      {
+         "id":352,
+         "hashtag":"harrypotter",
+         "url":"https://www.adoteumcara.com.br/gogole?q=%23harrypotter"
+      },
+      {
+         "id":1171,
+         "hashtag":"espn",
+         "url":"https://www.adoteumcara.com.br/gogole?q=%23espn"
+      }
+   ],
+   "popularidade":{
+      "visites":"1472",
+      "flashs":"0",
+      "contacts":"28",
+      "mails":"198",
+      "invits":"0",
+      "bonus":400,
+      "popu":"19060",
+      "id":"2564442",
+      "profile_completion":"0",
+      "rate":69
+   },
+   "detalhamentoPerfil":{
+      "Caracter\u00edsticas":{
+         "id":"139",
+         "data":[
+            [
+               {
+                  "id":20,
+                  "label":"Cor dos olhos",
+                  "value":"castanhos"
+               },
+               {
+                  "id":52,
+                  "label":"Estilo",
+                  "value":"esportivo"
+               },
+               {
+                  "ids":[
+                     18,
+                     19,
+                     56
+                  ],
+                  "label":"Cabelos",
+                  "value":"curto, castanho escuro"
+               },
+               {
+                  "ids":[
+                     14,
+                     16
+                  ],
+                  "label":"Medidas",
+                  "value":"185 cm, fortinho"
+               },
+               {
+                  "id":31,
+                  "label":"Particularidades",
+                  "value":"\u00f3culos"
+               },
+               {
+                  "id":28,
+                  "label":"Pelos",
+                  "value":""
+               }
+            ],
+            [
+               {
+                  "id":30,
+                  "label":"Rela\u00e7\u00e3o pretendida",
+                  "value":"carteira assinada (romance)"
+               },
+               {
+                  "id":74,
+                  "label":"Signo Astrol\u00f3gico",
+                  "value":""
+               },
+               {
+                  "id":53,
+                  "label":"Lifestyle",
+                  "value":"extrovertido"
+               },
+               {
+                  "id":6,
+                  "label":"Hobbies",
+                  "value":"Gamers "
+               },
+               {
+                  "id":1,
+                  "label":"Profiss\u00e3o",
+                  "value":"Trabalho na vale"
+               },
+               {
+                  "ids":[
+                     58,
+                     57
+                  ],
+                  "label":"Universidade",
+                  "value":"Eu estudo na FPAS - FACULDADE PIT\u00c1GORAS DE BELO HORIZONTE"
+               }
+            ],
+            [
+               {
+                  "id":23,
+                  "label":"\u00c1lcool",
+                  "value":"frequentemente"
+               },
+               {
+                  "id":22,
+                  "label":"Cigarro",
+                  "value":"suport\u00e1vel"
+               },
+               {
+                  "id":24,
+                  "label":"Alimenta\u00e7\u00e3o",
+                  "value":"gosto de tudo"
+               },
+               {
+                  "id":54,
+                  "label":"Comida preferida",
+                  "value":"churrasco, da m\u00e3e, mineira, p\u00e3o de queijo, peixes e frutos do mar"
+               },
+               {
+                  "id":41,
+                  "label":"Transportes",
+                  "value":"carro"
+               },
+               {
+                  "id":32,
+                  "label":"Fun\u00e7\u00f5es e habilidades",
+                  "value":"cheiroso, cozinha, encantador, inform\u00e1tica, massagem"
+               },
+               {
+                  "id":75,
+                  "label":"compatibilidade",
+                  "value":""
+               }
+            ]
+         ],
+         "view_type":"view_3columns",
+         "key":"view_v3_details_boy",
+         "is_empty":false,
+         "optional":false
+      },
+      "Conte\u00fado da Embalagem":{
+         "id":"140",
+         "data":[
+            {
+               "id":55,
+               "label":"Conte\u00fado da embalagem",
+               "value":""
+            }
+         ],
+         "view_type":"view_list",
+         "key":"view_v3_comes_with_boy",
+         "is_empty":true,
+         "optional":true
+      },
+      "Fun\u00e7\u00f5es e Habilidades":{
+         "id":"141",
+         "data":[
+            [
+               {
+                  "id":59,
+                  "label":"Esportes",
+                  "value":"futebol, rugby, basquete, handebol, j\u00edu-jitsu"
+               },
+               {
+                  "id":60,
+                  "label":"Animais",
+                  "value":"cachorro"
+               }
+            ],
+            [
+               {
+                  "id":61,
+                  "label":"Instrumentos Musicais",
+                  "value":""
+               },
+               {
+                  "id":62,
+                  "label":"Cultura",
+                  "value":"Netflix and chill, churrascos, shows, cinema, cozinhar"
+               }
+            ]
+         ],
+         "view_type":"view_2columns",
+         "key":"view_v3_leisure_boy",
+         "is_empty":false,
+         "optional":true
+      },
+      "Descri\u00e7\u00e3o":{
+         "id":"142",
+         "data":[
+            {
+               "id":43,
+               "label":"Descri\u00e7\u00e3o",
+               "value":"Signo peixes Sorrisos me atraem!gostos de jogos, ficar vendo filmes, s\u00e9ries e tudo mais.Cozinho muito bem. Gosto de andar de bike, fazer trakking"
+            }
+         ],
+         "view_type":"view_text",
+         "key":"view_v3_description_boy",
+         "is_empty":false,
+         "optional":false
+      },
+      "Para me adotar...":{
+         "id":"143",
+         "data":[
+            {
+               "id":44,
+               "label":"para me adotar",
+               "value":""
+            }
+         ],
+         "view_type":"view_text",
+         "key":"view_v3_shoppinglist_boy",
+         "is_empty":true,
+         "optional":false
+      },
+      "Op\u00e7\u00f5es":{
+         "id":"144",
+         "data":[
+            [
+               {
+                  "id":3,
+                  "label":"Cinema",
+                  "value":[
+                     "Acao",
+                     "Comedia",
+                     "Comedia romantica ",
+                     "Suspense ",
+                     "O juiz / harry potter"
+                  ]
+               },
+               {
+                  "id":5,
+                  "label":"TV/Seriados",
+                  "value":[
+                     "Tc ",
+                     "Flash",
+                     "Arrow",
+                     "Espn",
+                     "Super herois"
+                  ]
+               }
+            ],
+            [
+               {
+                  "id":2,
+                  "label":"M\u00fasica",
+                  "value":[
+                     "Rock",
+                     "Nirvana/ Ac/Dc/ coldplay",
+                     "Pop rock",
+                     "Reagge",
+                     "Avenged sevenfold"
+                  ]
+               },
+               {
+                  "id":4,
+                  "label":"Livros",
+                  "value":[
+                     "World of war craft (saga) ",
+                     "Fortaleza digital "
+                  ]
+               }
+            ]
+         ],
+         "view_type":"view_num_list",
+         "key":"view_v3_tastes_boy",
+         "is_empty":false,
+         "optional":true
+      }
+   },
+   "latitude":"-19.90840021666595",
+   "longitude":"-44.036432173227354"
+},
+]

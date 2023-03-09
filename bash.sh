@@ -1,21 +1,21 @@
 #!/bin/bash
 
-#start python webscrapingParalelo.py 2200000 2210000
+start python webscrapingParalelo.py 0 2600
 
-start python webscrapingParalelo.py 1000 2000
+start python webscrapingParalelo.py 2600 5200
 
-start python webscrapingParalelo.py 2000 3000
+start python webscrapingParalelo.py 5200 7800
 
-start python webscrapingParalelo.py 3000 4000
+start python webscrapingParalelo.py 7800 10400
 
-start python webscrapingParalelo.py 4000 5000
+start python webscrapingParalelo.py 10400 13000
 
-start python webscrapingParalelo.py 5000 6000
+start python webscrapingParalelo.py 13000 15600
 
-start python webscrapingParalelo.py 6000 7000
+start python webscrapingParalelo.py 15600 18200
 
-start python webscrapingParalelo.py 7000 8000
+start python webscrapingParalelo.py 18200 20800
 
-start python webscrapingParalelo.py 8000 9000
+start python webscrapingParalelo.py 20800 23400
 
-start python webscrapingParalelo.py 9000 10000
+start python webscrapingParalelo.py 23400 26000

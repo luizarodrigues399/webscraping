@@ -19,20 +19,20 @@ with requests.Session() as sessao:
 
 	sessao.post(config.LOGIN_URL, data = config.PAYLOAD, headers = config.HEADERS)
 
-	urls = funcao.gerarLinks(indiceInicio, indiceFim)
+	urls = funcao.gerarLinks(config.ARQUIVO_IDS, indiceInicio, indiceFim)
 
 	for link in urls:
-		print(link)
+		#print(link)
 
-		conteudoPagina = sessao.get(link, headers = config.HEADERS)
+		conteudoPagina = sessao.get(config.PROFILE_URL + link, headers = config.HEADERS)
 
 		try:
-			json = funcao.limparDadosUsuario(conteudoPagina)
+			jsonResultado = funcao.limparDadosUsuario(conteudoPagina)
 
-			resultadoFinal.append(funcao.extrairFeaturesUsuario(json))
+			resultadoFinal.append(funcao.extrairFeaturesUsuario(jsonResultado))
 
-		except:
-			pass
+		except Exception as e:
+			print(e)
 
 	funcao.gerarHTML(resultadoFinal, indiceInicio, indiceFim)
 
