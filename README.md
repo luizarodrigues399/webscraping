@@ -1,5 +1,5 @@
 <h3> Finalidade </h3>
-<p> Esse projeto visa fazer um webscraping dos perfis de pessoas do site de relacionamento Adote Um Cara, para servir de database para meu projeto de TCC. </p>
+<p> Esse projeto visa fazer um webscraping dos perfis de pessoas do site de relacionamento Adote Um Cara. </p>
 <p> Ele foi testado e construido usando Python 3.11.2, rodando em Windows 10 com 8 Giga de RAM e processador Intel CORE i7. </p>
 
 <p> Data de release da pasta: 09/03/2023.</p>
@@ -27,7 +27,7 @@
 
 <p> O webscraping paralelo utiliza-se do poder de vários workers juntamente com vários processos. Para tal, ao abrir o bash.sh, após configurar os parametros, vários processos irão se abrir no desktop. Pode-se colocar em background, mas por questões de debug, resolvi deixá-los visiveis.</p>
 
-<p> O arquivo gerarBashComandos.py gera de forma mais fácil indices de parametros para o arquivo bash.sh, pra não precisar ficar colocando na mão</p>
+<p> O arquivo gerarBashComandos.py gera de forma mais fácil indices de parametros para o arquivo bash.sh, pra não precisar ficar colocando na mão.</p>
 
 
 <p> Na pasta exemplos possui o webscraping de 2 perfis reais, em formato de json, e um webscraping da página inteira de um perfil real. </p>
