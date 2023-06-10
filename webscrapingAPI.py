@@ -12,7 +12,14 @@ with requests.Session() as sessao:
 
 		respostaGET = []
 
-		for offset in range (1, 1000):
+		inicio = 1 
+
+		fim = 1002  # range não inclui o ultimo e a ultima pagina é 1001
+
+		pular = 100 # cada pagina tem 100 registros, portanto pra próx pagina pulamos os 100 iniciais
+
+
+		for offset in range (inicio, fim, pular):
 			link = config.PRODUCTS_API + str(offset)
 
 			config.HEADERS['Authorization'] = config.AUTHORIZATION_API
